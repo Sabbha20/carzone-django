@@ -60,7 +60,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a {% if 'about' == request.path %}
+                        <a {% if 'about' in request.path %}
                         class="nav-link active"
                         {% else %}
                         class="nav-link"
@@ -69,7 +69,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a {% if 'services' == request.path %}
+                        <a {% if 'services' in request.path %}
                         class="nav-link active"
                         {% else %}
                         class="nav-link"
@@ -78,7 +78,7 @@
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a {% if 'contact' == request.path %}
+                        <a {% if 'contact' in request.path %}
                         class="nav-link active"
                         {% else %}
                         class="nav-link"
